@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar {
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes animation-background {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#dropdown-content {
+    display: none;
+    position: absolute;
+    right: 40px;
+    width: 210px;
+    top: 40px;
+    text-align: center;
+    background-color: #FF4A42;
+    text-decoration: none;
+    border: black solid 0.5px;
+}
+
+#nickname {
+    text-align: center;
+    width: 90px;
+}
+
+#password-change {
+    text-align: center;
+    width: 90px;
+}
+
+#profile-pic {
+    overflow: hidden;
+}
+
+#background-div {
+    animation: animation-background 3s linear forwards;
+    text-align: center;
+    z-index: 3;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 5%;
+    background: #FF4A42;
+    z-index: 1;
+}
+
+h1 {
+    vertical-align: central;
+    position: absolute;
+    line-height: 1.5em;
+}
+
+a {
+    color: #35363A;
+    font-weight: bold;
+    font-size: large;
+}
+
+#settings {
+    position: absolute;
+    right: 70px;
+    top: 10px;
+    width: 150px;
+    height: 30px;
+    background-color: #44A9B7;
+    border: black solid 0.5px;
+    font-weight: bold;
+}
+
+#users-section {
+    float: left;
+    position: fixed;
+    height: 94.47%;
+    width: 20.4%;
+    width: 20%;
+    bottom: 0;
+    background: #44A9B7;
+}
+
+#users-section:hover {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.borders {
+    border: black 2px solid;
+}
+
+#message {
+    width: 70%;
+    height: 35px;
+
+
+}
+
+#send {
+    height: 30px;
+    width: 60px;
+    background-color: #44A9B7;
+    border: black 0.5px solid;
+}
+
+#message-field {
+    height: 40px;   /*5%*/
+    width: 79.6%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #bfc0c5;
+}
+
+#message-field2 {
+    text-align: center;
+}
+
+#emoji-btn {
+    width: 60px;
+    height: 30px;
+    border: black 0.5px solid;
+    background-color: #FF4A42;
+}
+
+#emoji-content {
+    display: none;
+    width: 110px;
+    height: 110px;
+    background: #44A9B7;
+    border: black solid 1px;
+    overflow-y: scroll;
+    padding: 5px;
+    position: fixed;
+    bottom: 45px;
+    right: 80px;
+}
+#emoji-content::-webkit-scrollbar {
+    background: #FF4A42;
+    width: 5px;
+}
+#emoji-content::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+#gossip-section{
+    width: 79.6%;
+    height: 89%; /*94.47% - 89.2%*/
+    position: absolute;
+    right: 0;
+    bottom: 41px;
+    background: #bfc0c5;
+    overflow-y: scroll;
+}
+
+.user-message {
+    font-size: 30px;
+}
+
